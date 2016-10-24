@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34007FAF1DB942DD00166EB9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34007FAE1DB942DD00166EB9 /* Localizable.strings */; };
+		343ED0011DBBDC8D0015E0BE /* ChannelGridPresenterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0001DBBDC8D0015E0BE /* ChannelGridPresenterTest.m */; };
+		343ED0111DBBE0400015E0BE /* ChannelGridDataSourceMockError.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED00E1DBBE0400015E0BE /* ChannelGridDataSourceMockError.m */; };
+		343ED0121DBBE0400015E0BE /* ChannelGridDataSourceMockOk.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0101DBBE0400015E0BE /* ChannelGridDataSourceMockOk.m */; };
+		343ED0181DBBE0F70015E0BE /* ChannelGridViewControllerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0171DBBE0F70015E0BE /* ChannelGridViewControllerMock.m */; };
+		343ED01D1DBBE1C30015E0BE /* ChannelGridPresenterMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED01C1DBBE1C30015E0BE /* ChannelGridPresenterMock.m */; };
+		343ED0201DBBE1D10015E0BE /* ChannelGridCellPresenterMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED01F1DBBE1D10015E0BE /* ChannelGridCellPresenterMock.m */; };
+		343ED0231DBBE2F10015E0BE /* RoutingManagerMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0221DBBE2F10015E0BE /* RoutingManagerMock.m */; };
+		343ED0251DBC02320015E0BE /* ChannelGridViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0241DBC02320015E0BE /* ChannelGridViewControllerTest.m */; };
+		343ED0271DBC07790015E0BE /* ChannelGridDataSourceClanTVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0261DBC07790015E0BE /* ChannelGridDataSourceClanTVTest.m */; };
+		343ED0291DBC09AE0015E0BE /* ChannelCategoryClanTVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED0281DBC09AE0015E0BE /* ChannelCategoryClanTVTest.m */; };
+		343ED02B1DBC09BA0015E0BE /* ChannelClanTVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 343ED02A1DBC09BA0015E0BE /* ChannelClanTVTest.m */; };
+		344B666E1DB5893F00522E6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344B666D1DB5893F00522E6A /* AVFoundation.framework */; };
+		344B66701DB5894300522E6A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344B666F1DB5894300522E6A /* AVKit.framework */; };
+		347BC2F71DB0E7DC00BABD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC2F61DB0E7DC00BABD20 /* main.m */; };
+		347BC2FA1DB0E7DC00BABD20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC2F91DB0E7DC00BABD20 /* AppDelegate.m */; };
+		347BC3001DB0E7DC00BABD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BC2FE1DB0E7DC00BABD20 /* Main.storyboard */; };
+		347BC3021DB0E7DC00BABD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347BC3011DB0E7DC00BABD20 /* Assets.xcassets */; };
+		347BC30D1DB0E7DC00BABD20 /* TVChannelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC30C1DB0E7DC00BABD20 /* TVChannelsTests.m */; };
+		347BC3211DB0E92300BABD20 /* ChannelGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC31F1DB0E92300BABD20 /* ChannelGridViewController.m */; };
+		347BC3261DB0E95000BABD20 /* ChannelGridPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3251DB0E95000BABD20 /* ChannelGridPresenter.m */; };
+		347BC3291DB0E99D00BABD20 /* RoutingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3281DB0E99D00BABD20 /* RoutingManager.m */; };
+		347BC32D1DB0EA8800BABD20 /* ChannelGridCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC32C1DB0EA8800BABD20 /* ChannelGridCellPresenter.m */; };
+		347BC3311DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3301DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m */; };
+		347BC3341DB0EE7300BABD20 /* ChannelClanTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3331DB0EE7300BABD20 /* ChannelClanTV.m */; };
+		347BC3371DB0EFE500BABD20 /* ChannelCategoryClanTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3361DB0EFE500BABD20 /* ChannelCategoryClanTV.m */; };
+		347BC33C1DB0F5A300BABD20 /* NetworkRequestLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC33B1DB0F5A300BABD20 /* NetworkRequestLauncher.m */; };
+		347BC33F1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		347BC3091DB0E7DC00BABD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BC2EA1DB0E7DC00BABD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347BC2F11DB0E7DC00BABD20;
+			remoteInfo = TVChannels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3446B5AB1DB67D8B00FECAEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34007FAE1DB942DD00166EB9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		343ED0001DBBDC8D0015E0BE /* ChannelGridPresenterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridPresenterTest.m; sourceTree = "<group>"; };
+		343ED00D1DBBE0400015E0BE /* ChannelGridDataSourceMockError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridDataSourceMockError.h; sourceTree = "<group>"; };
+		343ED00E1DBBE0400015E0BE /* ChannelGridDataSourceMockError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridDataSourceMockError.m; sourceTree = "<group>"; };
+		343ED00F1DBBE0400015E0BE /* ChannelGridDataSourceMockOk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridDataSourceMockOk.h; sourceTree = "<group>"; };
+		343ED0101DBBE0400015E0BE /* ChannelGridDataSourceMockOk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridDataSourceMockOk.m; sourceTree = "<group>"; };
+		343ED0161DBBE0F70015E0BE /* ChannelGridViewControllerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridViewControllerMock.h; sourceTree = "<group>"; };
+		343ED0171DBBE0F70015E0BE /* ChannelGridViewControllerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridViewControllerMock.m; sourceTree = "<group>"; };
+		343ED01B1DBBE1C30015E0BE /* ChannelGridPresenterMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridPresenterMock.h; sourceTree = "<group>"; };
+		343ED01C1DBBE1C30015E0BE /* ChannelGridPresenterMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridPresenterMock.m; sourceTree = "<group>"; };
+		343ED01E1DBBE1D10015E0BE /* ChannelGridCellPresenterMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridCellPresenterMock.h; sourceTree = "<group>"; };
+		343ED01F1DBBE1D10015E0BE /* ChannelGridCellPresenterMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridCellPresenterMock.m; sourceTree = "<group>"; };
+		343ED0211DBBE2F10015E0BE /* RoutingManagerMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingManagerMock.h; sourceTree = "<group>"; };
+		343ED0221DBBE2F10015E0BE /* RoutingManagerMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingManagerMock.m; sourceTree = "<group>"; };
+		343ED0241DBC02320015E0BE /* ChannelGridViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridViewControllerTest.m; sourceTree = "<group>"; };
+		343ED0261DBC07790015E0BE /* ChannelGridDataSourceClanTVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridDataSourceClanTVTest.m; sourceTree = "<group>"; };
+		343ED0281DBC09AE0015E0BE /* ChannelCategoryClanTVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCategoryClanTVTest.m; sourceTree = "<group>"; };
+		343ED02A1DBC09BA0015E0BE /* ChannelClanTVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelClanTVTest.m; sourceTree = "<group>"; };
+		3446B5A21DB67D8B00FECAEA /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		344B666B1DB587F900522E6A /* RoutingManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingManagerProtocol.h; sourceTree = "<group>"; };
+		344B666D1DB5893F00522E6A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		344B666F1DB5894300522E6A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		347BC2F21DB0E7DC00BABD20 /* TVChannels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVChannels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		347BC2F61DB0E7DC00BABD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		347BC2F81DB0E7DC00BABD20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		347BC2F91DB0E7DC00BABD20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		347BC2FF1DB0E7DC00BABD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		347BC3011DB0E7DC00BABD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		347BC3031DB0E7DC00BABD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347BC3081DB0E7DC00BABD20 /* TVChannelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVChannelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		347BC30C1DB0E7DC00BABD20 /* TVChannelsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVChannelsTests.m; sourceTree = "<group>"; };
+		347BC30E1DB0E7DC00BABD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347BC31D1DB0E90500BABD20 /* ChannelGridViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridViewControllerProtocol.h; sourceTree = "<group>"; };
+		347BC31E1DB0E92300BABD20 /* ChannelGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridViewController.h; sourceTree = "<group>"; };
+		347BC31F1DB0E92300BABD20 /* ChannelGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridViewController.m; sourceTree = "<group>"; };
+		347BC3231DB0E93F00BABD20 /* ChannelGridPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridPresenterProtocol.h; sourceTree = "<group>"; };
+		347BC3241DB0E95000BABD20 /* ChannelGridPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridPresenter.h; sourceTree = "<group>"; };
+		347BC3251DB0E95000BABD20 /* ChannelGridPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridPresenter.m; sourceTree = "<group>"; };
+		347BC3271DB0E99D00BABD20 /* RoutingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingManager.h; sourceTree = "<group>"; };
+		347BC3281DB0E99D00BABD20 /* RoutingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingManager.m; sourceTree = "<group>"; };
+		347BC32A1DB0EA7400BABD20 /* ChannelGridCellPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridCellPresenterProtocol.h; sourceTree = "<group>"; };
+		347BC32B1DB0EA8800BABD20 /* ChannelGridCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridCellPresenter.h; sourceTree = "<group>"; };
+		347BC32C1DB0EA8800BABD20 /* ChannelGridCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridCellPresenter.m; sourceTree = "<group>"; };
+		347BC32E1DB0EBFD00BABD20 /* ChannelGridDataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridDataSourceProtocol.h; sourceTree = "<group>"; };
+		347BC32F1DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridDataSourceClanTV.h; sourceTree = "<group>"; };
+		347BC3301DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridDataSourceClanTV.m; sourceTree = "<group>"; };
+		347BC3321DB0EE7300BABD20 /* ChannelClanTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelClanTV.h; sourceTree = "<group>"; };
+		347BC3331DB0EE7300BABD20 /* ChannelClanTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelClanTV.m; sourceTree = "<group>"; };
+		347BC3351DB0EFE500BABD20 /* ChannelCategoryClanTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCategoryClanTV.h; sourceTree = "<group>"; };
+		347BC3361DB0EFE500BABD20 /* ChannelCategoryClanTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCategoryClanTV.m; sourceTree = "<group>"; };
+		347BC33A1DB0F5A300BABD20 /* NetworkRequestLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestLauncher.h; sourceTree = "<group>"; };
+		347BC33B1DB0F5A300BABD20 /* NetworkRequestLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestLauncher.m; sourceTree = "<group>"; };
+		347BC33D1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkRequestLauncher+UrlCompose.h"; sourceTree = "<group>"; };
+		347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkRequestLauncher+UrlCompose.m"; sourceTree = "<group>"; };
+		347BC3401DB1FE6300BABD20 /* ChannelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelProtocol.h; sourceTree = "<group>"; };
+		347BC3411DB1FF9800BABD20 /* ChannelCategoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCategoryProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		347BC2EF1DB0E7DC00BABD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B66701DB5894300522E6A /* AVKit.framework in Frameworks */,
+				344B666E1DB5893F00522E6A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347BC3051DB0E7DC00BABD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		343ECFFE1DBBDC3B0015E0BE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0001DBBDC8D0015E0BE /* ChannelGridPresenterTest.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		343ECFFF1DBBDC650015E0BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0241DBC02320015E0BE /* ChannelGridViewControllerTest.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		343ED0021DBBDC9A0015E0BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0131DBBE0470015E0BE /* DataSource */,
+				343ED0031DBBDCB00015E0BE /* Beans */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		343ED0031DBBDCB00015E0BE /* Beans */ = {
+			isa = PBXGroup;
+			children = (
+				343ED02A1DBC09BA0015E0BE /* ChannelClanTVTest.m */,
+				343ED0281DBC09AE0015E0BE /* ChannelCategoryClanTVTest.m */,
+			);
+			path = Beans;
+			sourceTree = "<group>";
+		};
+		343ED00B1DBBE0080015E0BE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				343ED01A1DBBE1A40015E0BE /* Routing */,
+				343ED0191DBBE1920015E0BE /* Presenter */,
+				343ED0141DBBE0890015E0BE /* View */,
+				343ED0151DBBE09B0015E0BE /* Model */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		343ED00C1DBBE0400015E0BE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				343ED00F1DBBE0400015E0BE /* ChannelGridDataSourceMockOk.h */,
+				343ED0101DBBE0400015E0BE /* ChannelGridDataSourceMockOk.m */,
+				343ED00D1DBBE0400015E0BE /* ChannelGridDataSourceMockError.h */,
+				343ED00E1DBBE0400015E0BE /* ChannelGridDataSourceMockError.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		343ED0131DBBE0470015E0BE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0261DBC07790015E0BE /* ChannelGridDataSourceClanTVTest.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		343ED0141DBBE0890015E0BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0161DBBE0F70015E0BE /* ChannelGridViewControllerMock.h */,
+				343ED0171DBBE0F70015E0BE /* ChannelGridViewControllerMock.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		343ED0151DBBE09B0015E0BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				343ED00C1DBBE0400015E0BE /* DataSource */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		343ED0191DBBE1920015E0BE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				343ED01B1DBBE1C30015E0BE /* ChannelGridPresenterMock.h */,
+				343ED01C1DBBE1C30015E0BE /* ChannelGridPresenterMock.m */,
+				343ED01E1DBBE1D10015E0BE /* ChannelGridCellPresenterMock.h */,
+				343ED01F1DBBE1D10015E0BE /* ChannelGridCellPresenterMock.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		343ED01A1DBBE1A40015E0BE /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				343ED0211DBBE2F10015E0BE /* RoutingManagerMock.h */,
+				343ED0221DBBE2F10015E0BE /* RoutingManagerMock.m */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		344B666C1DB5893F00522E6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344B666F1DB5894300522E6A /* AVKit.framework */,
+				344B666D1DB5893F00522E6A /* AVFoundation.framework */,
+				3446B5A21DB67D8B00FECAEA /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3461AD901DB7BCAF00C609E9 /* ClanTV */ = {
+			isa = PBXGroup;
+			children = (
+				347BC32F1DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.h */,
+				347BC3301DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m */,
+			);
+			path = ClanTV;
+			sourceTree = "<group>";
+		};
+		3461AD921DB7BEB000C609E9 /* ClanTV */ = {
+			isa = PBXGroup;
+			children = (
+				347BC3321DB0EE7300BABD20 /* ChannelClanTV.h */,
+				347BC3331DB0EE7300BABD20 /* ChannelClanTV.m */,
+				347BC3351DB0EFE500BABD20 /* ChannelCategoryClanTV.h */,
+				347BC3361DB0EFE500BABD20 /* ChannelCategoryClanTV.m */,
+			);
+			path = ClanTV;
+			sourceTree = "<group>";
+		};
+		347BC2E91DB0E7DB00BABD20 = {
+			isa = PBXGroup;
+			children = (
+				347BC2F41DB0E7DC00BABD20 /* TVChannels */,
+				347BC30B1DB0E7DC00BABD20 /* TVChannelsTests */,
+				347BC2F31DB0E7DC00BABD20 /* Products */,
+				344B666C1DB5893F00522E6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		347BC2F31DB0E7DC00BABD20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				347BC2F21DB0E7DC00BABD20 /* TVChannels.app */,
+				347BC3081DB0E7DC00BABD20 /* TVChannelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		347BC2F41DB0E7DC00BABD20 /* TVChannels */ = {
+			isa = PBXGroup;
+			children = (
+				347BC3381DB0F50400BABD20 /* Utilities */,
+				347BC31A1DB0E82300BABD20 /* Routing */,
+				347BC3191DB0E80D00BABD20 /* Presenter */,
+				347BC3181DB0E7F400BABD20 /* View */,
+				347BC3171DB0E7E600BABD20 /* Model */,
+				347BC2F81DB0E7DC00BABD20 /* AppDelegate.h */,
+				347BC2F91DB0E7DC00BABD20 /* AppDelegate.m */,
+				347BC2FE1DB0E7DC00BABD20 /* Main.storyboard */,
+				347BC3011DB0E7DC00BABD20 /* Assets.xcassets */,
+				347BC3031DB0E7DC00BABD20 /* Info.plist */,
+				34007FAE1DB942DD00166EB9 /* Localizable.strings */,
+				347BC2F51DB0E7DC00BABD20 /* Supporting Files */,
+			);
+			path = TVChannels;
+			sourceTree = "<group>";
+		};
+		347BC2F51DB0E7DC00BABD20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				347BC2F61DB0E7DC00BABD20 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		347BC30B1DB0E7DC00BABD20 /* TVChannelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				343ED00B1DBBE0080015E0BE /* Mock */,
+				343ED0021DBBDC9A0015E0BE /* Model */,
+				343ECFFE1DBBDC3B0015E0BE /* Presenter */,
+				343ECFFF1DBBDC650015E0BE /* View */,
+				347BC30C1DB0E7DC00BABD20 /* TVChannelsTests.m */,
+				347BC30E1DB0E7DC00BABD20 /* Info.plist */,
+			);
+			path = TVChannelsTests;
+			sourceTree = "<group>";
+		};
+		347BC3171DB0E7E600BABD20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347BC31C1DB0E87F00BABD20 /* DataSource */,
+				347BC31B1DB0E86D00BABD20 /* Beans */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		347BC3181DB0E7F400BABD20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				347BC31D1DB0E90500BABD20 /* ChannelGridViewControllerProtocol.h */,
+				347BC31E1DB0E92300BABD20 /* ChannelGridViewController.h */,
+				347BC31F1DB0E92300BABD20 /* ChannelGridViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		347BC3191DB0E80D00BABD20 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				347BC3231DB0E93F00BABD20 /* ChannelGridPresenterProtocol.h */,
+				347BC3241DB0E95000BABD20 /* ChannelGridPresenter.h */,
+				347BC3251DB0E95000BABD20 /* ChannelGridPresenter.m */,
+				347BC32A1DB0EA7400BABD20 /* ChannelGridCellPresenterProtocol.h */,
+				347BC32B1DB0EA8800BABD20 /* ChannelGridCellPresenter.h */,
+				347BC32C1DB0EA8800BABD20 /* ChannelGridCellPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		347BC31A1DB0E82300BABD20 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				344B666B1DB587F900522E6A /* RoutingManagerProtocol.h */,
+				347BC3271DB0E99D00BABD20 /* RoutingManager.h */,
+				347BC3281DB0E99D00BABD20 /* RoutingManager.m */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		347BC31B1DB0E86D00BABD20 /* Beans */ = {
+			isa = PBXGroup;
+			children = (
+				347BC3401DB1FE6300BABD20 /* ChannelProtocol.h */,
+				347BC3411DB1FF9800BABD20 /* ChannelCategoryProtocol.h */,
+				3461AD921DB7BEB000C609E9 /* ClanTV */,
+			);
+			path = Beans;
+			sourceTree = "<group>";
+		};
+		347BC31C1DB0E87F00BABD20 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				347BC32E1DB0EBFD00BABD20 /* ChannelGridDataSourceProtocol.h */,
+				3461AD901DB7BCAF00C609E9 /* ClanTV */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		347BC3381DB0F50400BABD20 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				347BC3391DB0F53C00BABD20 /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		347BC3391DB0F53C00BABD20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				347BC33A1DB0F5A300BABD20 /* NetworkRequestLauncher.h */,
+				347BC33B1DB0F5A300BABD20 /* NetworkRequestLauncher.m */,
+				347BC33D1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.h */,
+				347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		347BC2F11DB0E7DC00BABD20 /* TVChannels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347BC3111DB0E7DC00BABD20 /* Build configuration list for PBXNativeTarget "TVChannels" */;
+			buildPhases = (
+				347BC2EE1DB0E7DC00BABD20 /* Sources */,
+				347BC2EF1DB0E7DC00BABD20 /* Frameworks */,
+				347BC2F01DB0E7DC00BABD20 /* Resources */,
+				3446B5AB1DB67D8B00FECAEA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVChannels;
+			productName = TVChannels;
+			productReference = 347BC2F21DB0E7DC00BABD20 /* TVChannels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		347BC3071DB0E7DC00BABD20 /* TVChannelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347BC3141DB0E7DC00BABD20 /* Build configuration list for PBXNativeTarget "TVChannelsTests" */;
+			buildPhases = (
+				347BC3041DB0E7DC00BABD20 /* Sources */,
+				347BC3051DB0E7DC00BABD20 /* Frameworks */,
+				347BC3061DB0E7DC00BABD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				347BC30A1DB0E7DC00BABD20 /* PBXTargetDependency */,
+			);
+			name = TVChannelsTests;
+			productName = TVChannelsTests;
+			productReference = 347BC3081DB0E7DC00BABD20 /* TVChannelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		347BC2EA1DB0E7DC00BABD20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ricardo Suarez";
+				TargetAttributes = {
+					347BC2F11DB0E7DC00BABD20 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TW356LUFR3;
+						ProvisioningStyle = Automatic;
+					};
+					347BC3071DB0E7DC00BABD20 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TW356LUFR3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 347BC2F11DB0E7DC00BABD20;
+					};
+				};
+			};
+			buildConfigurationList = 347BC2ED1DB0E7DC00BABD20 /* Build configuration list for PBXProject "TVChannels" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 347BC2E91DB0E7DB00BABD20;
+			productRefGroup = 347BC2F31DB0E7DC00BABD20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				347BC2F11DB0E7DC00BABD20 /* TVChannels */,
+				347BC3071DB0E7DC00BABD20 /* TVChannelsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		347BC2F01DB0E7DC00BABD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BC3021DB0E7DC00BABD20 /* Assets.xcassets in Resources */,
+				34007FAF1DB942DD00166EB9 /* Localizable.strings in Resources */,
+				347BC3001DB0E7DC00BABD20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347BC3061DB0E7DC00BABD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		347BC2EE1DB0E7DC00BABD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BC3311DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m in Sources */,
+				347BC3261DB0E95000BABD20 /* ChannelGridPresenter.m in Sources */,
+				347BC3211DB0E92300BABD20 /* ChannelGridViewController.m in Sources */,
+				347BC3291DB0E99D00BABD20 /* RoutingManager.m in Sources */,
+				347BC33C1DB0F5A300BABD20 /* NetworkRequestLauncher.m in Sources */,
+				347BC2FA1DB0E7DC00BABD20 /* AppDelegate.m in Sources */,
+				347BC3371DB0EFE500BABD20 /* ChannelCategoryClanTV.m in Sources */,
+				347BC33F1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m in Sources */,
+				347BC3341DB0EE7300BABD20 /* ChannelClanTV.m in Sources */,
+				347BC32D1DB0EA8800BABD20 /* ChannelGridCellPresenter.m in Sources */,
+				347BC2F71DB0E7DC00BABD20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347BC3041DB0E7DC00BABD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343ED0011DBBDC8D0015E0BE /* ChannelGridPresenterTest.m in Sources */,
+				343ED0181DBBE0F70015E0BE /* ChannelGridViewControllerMock.m in Sources */,
+				343ED0111DBBE0400015E0BE /* ChannelGridDataSourceMockError.m in Sources */,
+				343ED0121DBBE0400015E0BE /* ChannelGridDataSourceMockOk.m in Sources */,
+				343ED0251DBC02320015E0BE /* ChannelGridViewControllerTest.m in Sources */,
+				343ED0231DBBE2F10015E0BE /* RoutingManagerMock.m in Sources */,
+				343ED01D1DBBE1C30015E0BE /* ChannelGridPresenterMock.m in Sources */,
+				343ED02B1DBC09BA0015E0BE /* ChannelClanTVTest.m in Sources */,
+				343ED0291DBC09AE0015E0BE /* ChannelCategoryClanTVTest.m in Sources */,
+				347BC30D1DB0E7DC00BABD20 /* TVChannelsTests.m in Sources */,
+				343ED0271DBC07790015E0BE /* ChannelGridDataSourceClanTVTest.m in Sources */,
+				343ED0201DBBE1D10015E0BE /* ChannelGridCellPresenterMock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		347BC30A1DB0E7DC00BABD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 347BC2F11DB0E7DC00BABD20 /* TVChannels */;
+			targetProxy = 347BC3091DB0E7DC00BABD20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		347BC2FE1DB0E7DC00BABD20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				347BC2FF1DB0E7DC00BABD20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		347BC30F1DB0E7DC00BABD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		347BC3101DB0E7DC00BABD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		347BC3121DB0E7DC00BABD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TW356LUFR3;
+				INFOPLIST_FILE = TVChannels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		347BC3131DB0E7DC00BABD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TW356LUFR3;
+				INFOPLIST_FILE = TVChannels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		347BC3151DB0E7DC00BABD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TW356LUFR3;
+				INFOPLIST_FILE = TVChannelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVChannels.app/TVChannels";
+			};
+			name = Debug;
+		};
+		347BC3161DB0E7DC00BABD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TW356LUFR3;
+				INFOPLIST_FILE = TVChannelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVChannels.app/TVChannels";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		347BC2ED1DB0E7DC00BABD20 /* Build configuration list for PBXProject "TVChannels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347BC30F1DB0E7DC00BABD20 /* Debug */,
+				347BC3101DB0E7DC00BABD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347BC3111DB0E7DC00BABD20 /* Build configuration list for PBXNativeTarget "TVChannels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347BC3121DB0E7DC00BABD20 /* Debug */,
+				347BC3131DB0E7DC00BABD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347BC3141DB0E7DC00BABD20 /* Build configuration list for PBXNativeTarget "TVChannelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347BC3151DB0E7DC00BABD20 /* Debug */,
+				347BC3161DB0E7DC00BABD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 347BC2EA1DB0E7DC00BABD20 /* Project object */;
+}

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TVChannels
+
+  Created by Ricardo Suarez on 20/10/16.
+  Copyright © 2016 Ricardo Suarez. All rights reserved.
+*/
+
+//Error
+"Error:Title" = "Warning";
+"Error:Action:Title" = "Close";
+"Error:Player:Message" = "Channel unavailable";
+"Error:Load:Message" = "Service unavailable, please try again later";
