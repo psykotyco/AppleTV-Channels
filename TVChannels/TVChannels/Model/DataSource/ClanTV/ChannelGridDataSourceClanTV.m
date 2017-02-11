@@ -14,7 +14,7 @@
 static NSString *const CHANNELS_SERVICES_CATEGORY_CHANNELS_KEY = @"cat_id";
 static NSString *const CHANNELS_SERVICES_PAGE_PARAM_KEY = @"page";
 static NSInteger const CHANNELS_SERVICES_PAGE_PARAM_VALUE = 1;
-static NSString *const CHANNELS_SERVICES_PATH = @"/apple/api.php";
+static NSString *const CHANNELS_SERVICES_PATH = @"/applegreen/api.php";
 static NSString *const IMAGES_SERVICES_PATH = @"/server/images";
 static NSString *const SERVER_BASE_URL = @"http://clantv.net";
 static NSString *const RESPONSE_DICTIONARY_KEY = @"DailyMotion";
