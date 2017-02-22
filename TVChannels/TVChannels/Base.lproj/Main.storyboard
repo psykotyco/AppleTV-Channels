@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aZt-OQ-GWo">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aZt-OQ-GWo">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,6 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3xw-3k-dGP">
+                                <rect key="frame" x="0.0" y="126" width="1920" height="954"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="100" minimumInteritemSpacing="100" id="gS3-Cp-aYQ">
                                     <size key="itemSize" width="300" height="200"/>
                                     <size key="headerReferenceSize" width="1920" height="100"/>
@@ -48,6 +53,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Bl-d4c">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
@@ -67,12 +73,14 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpe-g7-re8">
+                                            <rect key="frame" x="848" y="4" width="92" height="92"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="92" id="MPL-tN-AB8"/>
                                                 <constraint firstAttribute="width" secondItem="qpe-g7-re8" secondAttribute="height" id="e6i-Qu-vKN"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNW-vk-Ihp" userLabel="Label - Header Title">
+                                            <rect key="frame" x="960" y="50" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -91,8 +99,11 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogS-cU-o66" userLabel="View - Loading">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-By-Sot"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-By-Sot">
+                                        <rect key="frame" x="928" y="508" width="64" height="64"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -100,14 +111,28 @@
                                     <constraint firstItem="UFq-By-Sot" firstAttribute="centerX" secondItem="ogS-cU-o66" secondAttribute="centerX" id="dA7-gv-txS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mki-Qa-uXn">
+                                <rect key="frame" x="1550" y="20" width="250" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="JX7-cA-ZOo"/>
+                                    <constraint firstAttribute="height" constant="86" id="rrZ-yT-4YQ"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="reloadButtonSelected:" destination="7FJ-c9-bs0" eventType="primaryActionTriggered" id="Br3-Ak-ExJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="3xw-3k-dGP" firstAttribute="top" secondItem="Mki-Qa-uXn" secondAttribute="bottom" constant="20" id="1Uu-mo-MTl"/>
                             <constraint firstAttribute="trailing" secondItem="3xw-3k-dGP" secondAttribute="trailing" id="3cW-8P-jX2"/>
                             <constraint firstAttribute="trailing" secondItem="ogS-cU-o66" secondAttribute="trailing" id="HRj-xW-DKb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mki-Qa-uXn" secondAttribute="trailing" constant="100" id="LtX-jp-Zbk"/>
+                            <constraint firstItem="Mki-Qa-uXn" firstAttribute="top" secondItem="F0G-38-cNc" secondAttribute="bottom" constant="20" id="U0g-r5-fZv"/>
                             <constraint firstItem="5wC-PV-fah" firstAttribute="top" secondItem="3xw-3k-dGP" secondAttribute="bottom" id="W4M-Hl-peN"/>
                             <constraint firstItem="5wC-PV-fah" firstAttribute="top" secondItem="ogS-cU-o66" secondAttribute="bottom" id="XCT-l0-wKv"/>
                             <constraint firstItem="3xw-3k-dGP" firstAttribute="leading" secondItem="hyO-Jn-XUO" secondAttribute="leading" id="eOP-U4-d6j"/>
-                            <constraint firstItem="3xw-3k-dGP" firstAttribute="top" secondItem="F0G-38-cNc" secondAttribute="bottom" id="hep-vc-efe"/>
                             <constraint firstItem="ogS-cU-o66" firstAttribute="leading" secondItem="hyO-Jn-XUO" secondAttribute="leading" id="phe-Am-cQb"/>
                             <constraint firstItem="ogS-cU-o66" firstAttribute="top" secondItem="F0G-38-cNc" secondAttribute="bottom" id="sA6-6t-KQW"/>
                         </constraints>
@@ -115,6 +140,7 @@
                     <connections>
                         <outlet property="channelGrid" destination="3xw-3k-dGP" id="zel-Al-R6w"/>
                         <outlet property="loadingView" destination="ogS-cU-o66" id="zs4-8G-wgp"/>
+                        <outlet property="reloadButton" destination="Mki-Qa-uXn" id="evt-51-H5Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kn-ZQ-Xav" userLabel="First Responder" sceneMemberID="firstResponder"/>

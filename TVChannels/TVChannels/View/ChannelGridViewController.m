@@ -15,6 +15,7 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
 
 @property (nonatomic, weak) IBOutlet UIView *loadingView;
 @property (nonatomic, weak) IBOutlet UICollectionView *channelGrid;
+@property (nonatomic, weak) IBOutlet UIButton *reloadButton;
 
 @end
 
@@ -33,6 +34,15 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
 }
 
 #pragma mark - ---- PRIVATE
+
+#pragma mark - ---- IBAction
+
+- (IBAction)reloadButtonSelected:(id)sender {
+    
+    if ([self.presenter respondsToSelector:@selector(refreshData)]) {
+        [self.presenter refreshData];
+    }
+}
 
 #pragma mark - ---- ---- UICollectionViewDelegate
 
