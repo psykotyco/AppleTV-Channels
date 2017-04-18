@@ -74,15 +74,18 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:GRID_CHANNEL_CELL_REUSE_IDENTIFIER forIndexPath:indexPath];
     UIImageView *cellImage = [cell viewWithTag:10];
-    
+    UILabel *cellTitle = [cell viewWithTag:11];
+
     NSArray *categoryChannels = [[self.channelCategories objectAtIndex:indexPath.section] getCategoryChannels];
     id<ChannelProtocol> channel = categoryChannels[indexPath.row];
     [cellImage setImage:[UIImage imageNamed:@"channel_placeholder"]];
+    [cellTitle setText:[channel getTitle]];
     
     if ([self.dataSource respondsToSelector:@selector(getImageWithName:completion:)]) {
         [self.dataSource getImageWithName:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
             if (result && !error) {
                 [cellImage setImage:result];
+                [cellTitle setText:NULL];
             }
         }];
     }

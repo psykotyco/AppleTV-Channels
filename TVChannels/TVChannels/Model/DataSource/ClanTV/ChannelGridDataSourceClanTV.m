@@ -15,8 +15,9 @@ static NSString *const CHANNELS_SERVICES_CATEGORY_CHANNELS_KEY = @"cat_id";
 static NSString *const CHANNELS_SERVICES_PAGE_PARAM_KEY = @"page";
 static NSInteger const CHANNELS_SERVICES_PAGE_PARAM_VALUE = 1;
 static NSString *const CHANNELS_SERVICES_PATH = @"/applegreen/api.php";
-static NSString *const IMAGES_SERVICES_PATH = @"/server/images";
+static NSString *const IMAGES_SERVICES_PATH = @"/images";
 static NSString *const SERVER_BASE_URL = @"http://clantv.net";
+static NSString *const SERVER_IMAGE_BASE_URL = @"http://cdn.redyinfo.com";
 static NSString *const RESPONSE_DICTIONARY_KEY = @"DailyMotion";
 
 @implementation ChannelGridDataSourceClanTV
@@ -55,7 +56,7 @@ static NSString *const RESPONSE_DICTIONARY_KEY = @"DailyMotion";
 
 - (NSString *)getImageUrlForImageWithName:(NSString *)imageName {
     
-    return [NSString stringWithFormat:@"%@%@/%@", SERVER_BASE_URL, IMAGES_SERVICES_PATH, imageName];
+    return [NSString stringWithFormat:@"%@%@/%@", SERVER_IMAGE_BASE_URL, IMAGES_SERVICES_PATH, imageName];
 }
 
 - (NSArray *)orderCategoriesById:(NSArray *)categories {
