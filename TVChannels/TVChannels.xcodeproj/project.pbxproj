@@ -459,7 +459,7 @@
 				TargetAttributes = {
 					347BC2F11DB0E7DC00BABD20 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = TW356LUFR3;
+						DevelopmentTeam = 5UP7KN6DHU;
 						ProvisioningStyle = Automatic;
 					};
 					347BC3071DB0E7DC00BABD20 = {
@@ -662,10 +662,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = TW356LUFR3;
+				DEVELOPMENT_TEAM = 5UP7KN6DHU;
 				INFOPLIST_FILE = TVChannels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -675,10 +675,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = TW356LUFR3;
+				DEVELOPMENT_TEAM = 5UP7KN6DHU;
 				INFOPLIST_FILE = TVChannels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.TVChannels2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
