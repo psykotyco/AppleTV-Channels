@@ -10,9 +10,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 #import "ChannelGridCellPresenter.h"
-#import "ChannelGridDataSourceClanTV.h"
 #import "ChannelGridPresenter.h"
 #import "ChannelGridViewController.h"
+#import "ChannelGridDataSourceClanTV.h"
+#import "ChannelGridDataSourceTV24.h"
 
 static NSString *const kMainStoryboardName = @"Main";
 
@@ -23,6 +24,8 @@ static NSString *const kMainStoryboardName = @"Main";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+//  Uncomment next line to enable ClanTV. You will need to comment the startWithTV24 call
+//    [self startWithClanTV];
     [self startWithClanTV];
 }
 
@@ -32,6 +35,17 @@ static NSString *const kMainStoryboardName = @"Main";
     
     ChannelGridViewController *channelGridViewController = [[UIStoryboard storyboardWithName:kMainStoryboardName bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ChannelGridViewController class])];
     ChannelGridDataSourceClanTV *channelGridDataSource = [ChannelGridDataSourceClanTV new];
+    ChannelGridCellPresenter *channelGridCellPresenter = [[ChannelGridCellPresenter alloc] initWithDataSource:channelGridDataSource];
+    ChannelGridPresenter *channelGridPresenter = [[ChannelGridPresenter alloc] initWithView:channelGridViewController dataSource:channelGridDataSource andRoutingManager:self];
+    [channelGridViewController setPresenter:channelGridPresenter];
+    [channelGridViewController setCellPresenter:channelGridCellPresenter];
+    self.viewControllers = @[channelGridViewController];
+}
+
+- (void)startWithTV24 {
+
+    ChannelGridViewController *channelGridViewController = [[UIStoryboard storyboardWithName:kMainStoryboardName bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ChannelGridViewController class])];
+    ChannelGridDataSourceTV24 *channelGridDataSource = [ChannelGridDataSourceTV24 new];
     ChannelGridCellPresenter *channelGridCellPresenter = [[ChannelGridCellPresenter alloc] initWithDataSource:channelGridDataSource];
     ChannelGridPresenter *channelGridPresenter = [[ChannelGridPresenter alloc] initWithView:channelGridViewController dataSource:channelGridDataSource andRoutingManager:self];
     [channelGridViewController setPresenter:channelGridPresenter];
