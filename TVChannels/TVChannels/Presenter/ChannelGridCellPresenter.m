@@ -88,6 +88,13 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
                 [cellTitle setText:NULL];
             }
         }];
+    } else if ([self.dataSource respondsToSelector:@selector(getImageWithUrl:completion:)]) {
+        [self.dataSource getImageWithUrl:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
+            if (result && !error) {
+                [cellImage setImage:result];
+                [cellTitle setText:NULL];
+            }
+        }];
     }
     
     return cell;

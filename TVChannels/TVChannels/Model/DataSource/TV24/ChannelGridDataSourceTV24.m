@@ -44,8 +44,8 @@ static NSString *const RESPONSE_DICTIONARY_KEY = @"data";
                     [channels addObject:[[ChannelTV24 alloc] initWithDictionary:channelDictionary]];
                 }
 
-                NSDictionary *mockCategory = @{};
-                block([[NSArray arrayWithObject:[[ChannelCategoryTV24 alloc] initWithDictionary:mockCategory channels:channels]] copy], nil);
+                NSDictionary *category = @{kTV24CategoryIdKey : @"", kTV24CategoryNameKey : @"Main Channels", kTV24CategoryImageKey : @""};
+                block([[NSArray arrayWithObject:[[ChannelCategoryTV24 alloc] initWithDictionary:category channels:channels]] copy], nil);
             }
         }
     }];

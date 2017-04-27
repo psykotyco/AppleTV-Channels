@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ChannelCategoryProtocol.h"
 
+extern NSString *const kTV24CategoryIdKey;
+extern NSString *const kTV24CategoryNameKey;
+extern NSString *const kTV24CategoryImageKey;
+
 @interface ChannelCategoryTV24 : NSObject <ChannelCategoryProtocol>
 
 @end

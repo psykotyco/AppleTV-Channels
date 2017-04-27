@@ -26,7 +26,7 @@ static NSString *const kMainStoryboardName = @"Main";
     [super viewDidLoad];
 //  Uncomment next line to enable ClanTV. You will need to comment the startWithTV24 call
 //    [self startWithClanTV];
-    [self startWithClanTV];
+    [self startWithTV24];
 }
 
 #pragma mark - ---- PRIVATE

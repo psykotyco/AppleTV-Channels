@@ -9,15 +9,16 @@
 #import "ChannelTV24.h"
 
 static NSString *const kTV24IdKey = @"id";
-static NSString *const kTV24VideoTitleKey = @"video_title";
-static NSString *const kTV24VideoUrlKey = @"video_url";
-static NSString *const kTV24VideoThumbnailKey = @"video_thumbnail";
+static NSString *const kTV24VideoTitleKey = @"channel";
+static NSString *const kTV24VideoUrlKey = @"stream";
+static NSString *const kTV24VideoThumbnailKey = @"thumb";
 static NSString *const kTV24VideoDurationKey = @"video_duration";
 static NSString *const kTV24VideoDescriptionKey = @"video_description";
 static NSString *const kTV24CidKey = @"cid";
 static NSString *const kTV24CatIdKey = @"cat_id";
 static NSString *const kTV24CategoryNameKey = @"category_name";
 static NSString *const kTV24CategoryImageKey = @"category_image";
+
 
 @interface ChannelTV24 ()
 
