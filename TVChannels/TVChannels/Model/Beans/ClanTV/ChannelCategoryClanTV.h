@@ -15,6 +15,4 @@ extern NSString *const kClanTVCategoryImageKey;
 
 @interface ChannelCategoryClanTV : NSObject <ChannelCategoryProtocol>
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary channels:(NSArray *)channels;
-
 @end

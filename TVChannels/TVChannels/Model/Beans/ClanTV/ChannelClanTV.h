@@ -11,6 +11,4 @@
 
 @interface ChannelClanTV : NSObject <ChannelProtocol>
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
 @end

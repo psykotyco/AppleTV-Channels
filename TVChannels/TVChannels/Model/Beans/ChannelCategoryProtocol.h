@@ -10,6 +10,8 @@
 
 @protocol ChannelCategoryProtocol <NSObject>
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary channels:(NSArray *)channels;
+
 - (NSString *)getCategoryId;
 - (NSString *)getCategoryName;
 - (NSString *)getCategoryImageName;

@@ -15,6 +15,10 @@ typedef void (^imageCompletionBlock)(UIImage *result, NSError *error);
 @protocol ChannelGridDataSourceProtocol <NSObject>
 
 - (void)getCategoryListWithCompletion:(categoryListCompletionBlock)block;
+
+@optional
+
 - (void)getImageWithName:(NSString *)imageName completion:(imageCompletionBlock)block;
+- (void)getImageWithUrl:(NSString *)imageUrl completion:(imageCompletionBlock)block;
 
 @end

@@ -10,6 +10,8 @@
 
 @protocol ChannelProtocol <NSObject>
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 - (NSString *)getChannelId;
 - (NSString *)getTitle;
 - (NSString *)getUrl;

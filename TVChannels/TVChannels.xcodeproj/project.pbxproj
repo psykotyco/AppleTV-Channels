@@ -35,6 +35,9 @@
 		347BC3371DB0EFE500BABD20 /* ChannelCategoryClanTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC3361DB0EFE500BABD20 /* ChannelCategoryClanTV.m */; };
 		347BC33C1DB0F5A300BABD20 /* NetworkRequestLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC33B1DB0F5A300BABD20 /* NetworkRequestLauncher.m */; };
 		347BC33F1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */; };
+		FA21232F1EB29B320043B143 /* ChannelGridDataSourceTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21232E1EB29B320043B143 /* ChannelGridDataSourceTV24.m */; };
+		FA2123321EB29B4E0043B143 /* ChannelTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2123311EB29B4E0043B143 /* ChannelTV24.m */; };
+		FA2123351EB29B600043B143 /* ChannelCategoryTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2123341EB29B600043B143 /* ChannelCategoryTV24.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,12 @@
 		347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkRequestLauncher+UrlCompose.m"; sourceTree = "<group>"; };
 		347BC3401DB1FE6300BABD20 /* ChannelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelProtocol.h; sourceTree = "<group>"; };
 		347BC3411DB1FF9800BABD20 /* ChannelCategoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCategoryProtocol.h; sourceTree = "<group>"; };
+		FA21232D1EB29B320043B143 /* ChannelGridDataSourceTV24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelGridDataSourceTV24.h; sourceTree = "<group>"; };
+		FA21232E1EB29B320043B143 /* ChannelGridDataSourceTV24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelGridDataSourceTV24.m; sourceTree = "<group>"; };
+		FA2123301EB29B4E0043B143 /* ChannelTV24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTV24.h; sourceTree = "<group>"; };
+		FA2123311EB29B4E0043B143 /* ChannelTV24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTV24.m; sourceTree = "<group>"; };
+		FA2123331EB29B600043B143 /* ChannelCategoryTV24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCategoryTV24.h; sourceTree = "<group>"; };
+		FA2123341EB29B600043B143 /* ChannelCategoryTV24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCategoryTV24.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +386,7 @@
 				347BC3401DB1FE6300BABD20 /* ChannelProtocol.h */,
 				347BC3411DB1FF9800BABD20 /* ChannelCategoryProtocol.h */,
 				3461AD921DB7BEB000C609E9 /* ClanTV */,
+				FA21232C1EB29AEB0043B143 /* TV24 */,
 			);
 			path = Beans;
 			sourceTree = "<group>";
@@ -386,6 +396,7 @@
 			children = (
 				347BC32E1DB0EBFD00BABD20 /* ChannelGridDataSourceProtocol.h */,
 				3461AD901DB7BCAF00C609E9 /* ClanTV */,
+				FA21232B1EB29AC20043B143 /* TV24 */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -407,6 +418,26 @@
 				347BC33E1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FA21232B1EB29AC20043B143 /* TV24 */ = {
+			isa = PBXGroup;
+			children = (
+				FA21232D1EB29B320043B143 /* ChannelGridDataSourceTV24.h */,
+				FA21232E1EB29B320043B143 /* ChannelGridDataSourceTV24.m */,
+			);
+			path = TV24;
+			sourceTree = "<group>";
+		};
+		FA21232C1EB29AEB0043B143 /* TV24 */ = {
+			isa = PBXGroup;
+			children = (
+				FA2123301EB29B4E0043B143 /* ChannelTV24.h */,
+				FA2123311EB29B4E0043B143 /* ChannelTV24.m */,
+				FA2123331EB29B600043B143 /* ChannelCategoryTV24.h */,
+				FA2123341EB29B600043B143 /* ChannelCategoryTV24.m */,
+			);
+			path = TV24;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,15 +545,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2123321EB29B4E0043B143 /* ChannelTV24.m in Sources */,
 				347BC3311DB0EC0A00BABD20 /* ChannelGridDataSourceClanTV.m in Sources */,
 				347BC3261DB0E95000BABD20 /* ChannelGridPresenter.m in Sources */,
 				347BC3211DB0E92300BABD20 /* ChannelGridViewController.m in Sources */,
 				347BC3291DB0E99D00BABD20 /* RoutingManager.m in Sources */,
+				FA21232F1EB29B320043B143 /* ChannelGridDataSourceTV24.m in Sources */,
 				347BC33C1DB0F5A300BABD20 /* NetworkRequestLauncher.m in Sources */,
 				347BC2FA1DB0E7DC00BABD20 /* AppDelegate.m in Sources */,
 				347BC3371DB0EFE500BABD20 /* ChannelCategoryClanTV.m in Sources */,
 				347BC33F1DB1052C00BABD20 /* NetworkRequestLauncher+UrlCompose.m in Sources */,
 				347BC3341DB0EE7300BABD20 /* ChannelClanTV.m in Sources */,
+				FA2123351EB29B600043B143 /* ChannelCategoryTV24.m in Sources */,
 				347BC32D1DB0EA8800BABD20 /* ChannelGridCellPresenter.m in Sources */,
 				347BC2F71DB0E7DC00BABD20 /* main.m in Sources */,
 			);
