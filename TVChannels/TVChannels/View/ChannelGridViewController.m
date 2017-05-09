@@ -9,7 +9,6 @@
 #import "ChannelGridViewController.h"
 
 static NSString *const GRID_CHANNEL_CELL_REUSE_IDENTIFIER = @"ChannelCell";
-static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
 
 @interface ChannelGridViewController () <UICollectionViewDelegate>
 
@@ -26,7 +25,8 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+
+    [self.channelGrid registerNib:[UINib nibWithNibName:@"TV24CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:GRID_CHANNEL_CELL_REUSE_IDENTIFIER];
     [self.channelGrid setDataSource:self.cellPresenter];
     if ([self.presenter respondsToSelector:@selector(refreshData)]) {
         [self.presenter refreshData];

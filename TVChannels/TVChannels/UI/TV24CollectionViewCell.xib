@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ChannelCell" id="UXe-kg-pQi">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="385"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="385"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="20A-6g-neG" userLabel="Image View - Channel Image">
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="308"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-DA-c2D" userLabel="View - Current Program">
+                        <rect key="frame" x="0.0" y="308" width="550" height="77"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-Ht-y4q">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="ba3-eW-m6F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tON-UD-9s3" userLabel="Label - Current Program Title">
+                                <rect key="frame" x="121" y="0.0" width="75" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0L-Od-Kl5" userLabel="Label - Nexte Program Title">
+                                <rect key="frame" x="121" y="35" width="70" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZU0-Ht-y4q" secondAttribute="bottom" id="DBz-E9-8Y7"/>
+                            <constraint firstItem="t0L-Od-Kl5" firstAttribute="top" secondItem="tON-UD-9s3" secondAttribute="bottom" id="DHa-0J-Vhm"/>
+                            <constraint firstItem="t0L-Od-Kl5" firstAttribute="leading" secondItem="tON-UD-9s3" secondAttribute="leading" id="Dwy-CP-WTw"/>
+                            <constraint firstItem="ZU0-Ht-y4q" firstAttribute="top" secondItem="JgG-DA-c2D" secondAttribute="top" id="E2w-hS-VTe"/>
+                            <constraint firstItem="tON-UD-9s3" firstAttribute="top" secondItem="JgG-DA-c2D" secondAttribute="top" id="YUq-EI-vz4"/>
+                            <constraint firstItem="tON-UD-9s3" firstAttribute="leading" secondItem="ZU0-Ht-y4q" secondAttribute="trailing" constant="18" id="ghW-b6-gdH"/>
+                            <constraint firstItem="ZU0-Ht-y4q" firstAttribute="leading" secondItem="JgG-DA-c2D" secondAttribute="leading" id="j2G-fU-a8Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="JgG-DA-c2D" firstAttribute="leading" secondItem="UXe-kg-pQi" secondAttribute="leading" id="2q8-Gf-oFB"/>
+                <constraint firstItem="20A-6g-neG" firstAttribute="leading" secondItem="UXe-kg-pQi" secondAttribute="leading" id="6P2-4m-Y1d"/>
+                <constraint firstItem="JgG-DA-c2D" firstAttribute="height" secondItem="20A-6g-neG" secondAttribute="height" multiplier="0.25" id="BPS-D4-0Ov"/>
+                <constraint firstAttribute="bottom" secondItem="JgG-DA-c2D" secondAttribute="bottom" id="QFA-Hf-RQW"/>
+                <constraint firstItem="20A-6g-neG" firstAttribute="top" secondItem="UXe-kg-pQi" secondAttribute="top" id="aId-uq-szB"/>
+                <constraint firstAttribute="trailing" secondItem="JgG-DA-c2D" secondAttribute="trailing" id="iZI-mw-RYX"/>
+                <constraint firstAttribute="trailing" secondItem="20A-6g-neG" secondAttribute="trailing" id="nvJ-Dx-XbN"/>
+                <constraint firstItem="JgG-DA-c2D" firstAttribute="top" secondItem="20A-6g-neG" secondAttribute="bottom" id="u5K-CK-U7i"/>
+            </constraints>
+            <point key="canvasLocation" x="-216" y="-267"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -38,6 +38,7 @@
 		FA21232F1EB29B320043B143 /* ChannelGridDataSourceTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21232E1EB29B320043B143 /* ChannelGridDataSourceTV24.m */; };
 		FA2123321EB29B4E0043B143 /* ChannelTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2123311EB29B4E0043B143 /* ChannelTV24.m */; };
 		FA2123351EB29B600043B143 /* ChannelCategoryTV24.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2123341EB29B600043B143 /* ChannelCategoryTV24.m */; };
+		FAE056E01EC27A4900B7D6A7 /* TV24CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE056DF1EC27A4900B7D6A7 /* TV24CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		FA2123311EB29B4E0043B143 /* ChannelTV24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTV24.m; sourceTree = "<group>"; };
 		FA2123331EB29B600043B143 /* ChannelCategoryTV24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCategoryTV24.h; sourceTree = "<group>"; };
 		FA2123341EB29B600043B143 /* ChannelCategoryTV24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCategoryTV24.m; sourceTree = "<group>"; };
+		FAE056DF1EC27A4900B7D6A7 /* TV24CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TV24CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 				347BC3191DB0E80D00BABD20 /* Presenter */,
 				347BC3181DB0E7F400BABD20 /* View */,
 				347BC3171DB0E7E600BABD20 /* Model */,
+				FAE056DE1EC27A0600B7D6A7 /* UI */,
 				347BC2F81DB0E7DC00BABD20 /* AppDelegate.h */,
 				347BC2F91DB0E7DC00BABD20 /* AppDelegate.m */,
 				347BC2FE1DB0E7DC00BABD20 /* Main.storyboard */,
@@ -440,6 +443,14 @@
 			path = TV24;
 			sourceTree = "<group>";
 		};
+		FAE056DE1EC27A0600B7D6A7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAE056DF1EC27A4900B7D6A7 /* TV24CollectionViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +538,7 @@
 			files = (
 				347BC3021DB0E7DC00BABD20 /* Assets.xcassets in Resources */,
 				34007FAF1DB942DD00166EB9 /* Localizable.strings in Resources */,
+				FAE056E01EC27A4900B7D6A7 /* TV24CollectionViewCell.xib in Resources */,
 				347BC3001DB0E7DC00BABD20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,6 @@
 #import "ChannelProtocol.h"
 
 static NSString *const GRID_CHANNEL_CELL_REUSE_IDENTIFIER = @"ChannelCell";
-static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
 
 @interface ChannelGridCellPresenter ()
 
@@ -47,52 +46,30 @@ static NSString *const GRID_CATEGORY_HEADER_REUSE_IDENTIFIER = @"HeaderCell";
     return [[[self.channelCategories objectAtIndex:section] getCategoryChannels] count];
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    
-    UICollectionReusableView *reusableView = nil;
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        
-        reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:GRID_CATEGORY_HEADER_REUSE_IDENTIFIER forIndexPath:indexPath];
-        UILabel *headerTitle = [reusableView viewWithTag:11];
-        UIImageView *headerIcon = [reusableView viewWithTag:10];
-        
-        id<ChannelCategoryProtocol> category = [self.channelCategories objectAtIndex:indexPath.section];
-        [headerTitle setText:[category getCategoryName]];
-        [headerIcon setImage:nil];
-        
-        if ([self.dataSource respondsToSelector:@selector(getImageWithName:completion:)]) {
-            [self.dataSource getImageWithName:[category getCategoryImageName] completion:^(UIImage *result, NSError *error) {
-                [headerIcon setImage:result];
-            }];
-        }
-    }
-    
-    return reusableView;
-}
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:GRID_CHANNEL_CELL_REUSE_IDENTIFIER forIndexPath:indexPath];
-    UIImageView *cellImage = [cell viewWithTag:10];
-    UILabel *cellTitle = [cell viewWithTag:11];
+    UIImageView *programImage = [cell viewWithTag:10];
+    UIImageView *channelImage = [cell viewWithTag:11];
+    UILabel *currentProgram = [cell viewWithTag:12];
+    UILabel *nextProgram = [cell viewWithTag:13];
+
 
     NSArray *categoryChannels = [[self.channelCategories objectAtIndex:indexPath.section] getCategoryChannels];
     id<ChannelProtocol> channel = categoryChannels[indexPath.row];
-    [cellImage setImage:[UIImage imageNamed:@"channel_placeholder"]];
-    [cellTitle setText:[channel getTitle]];
+    [programImage setImage:[UIImage imageNamed:@"channel_placeholder"]];
     
     if ([self.dataSource respondsToSelector:@selector(getImageWithName:completion:)]) {
         [self.dataSource getImageWithName:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
             if (result && !error) {
-                [cellImage setImage:result];
-                [cellTitle setText:NULL];
+                [programImage setImage:result];
             }
         }];
     } else if ([self.dataSource respondsToSelector:@selector(getImageWithUrl:completion:)]) {
         [self.dataSource getImageWithUrl:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
             if (result && !error) {
-                [cellImage setImage:result];
-                [cellTitle setText:NULL];
+                [programImage setImage:result];
             }
         }];
     }
