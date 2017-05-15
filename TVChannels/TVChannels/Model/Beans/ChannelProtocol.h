@@ -22,5 +22,15 @@
 - (NSString *)getCategoryId;
 - (NSString *)getCategoryName;
 - (NSString *)getCategoryImageName;
+- (NSString *)getChannelLogo;
+
+- (NSString *)getChannelCurrentProgramTitle;
+- (NSString *)getChannelCurrentProgramDescription;
+- (NSString *)getChannelCurrentProgramTime;
+
+- (NSString *)getChannelNextProgramTitle;
+- (NSString *)getChannelNextProgramTime;
+
+
 
 @end

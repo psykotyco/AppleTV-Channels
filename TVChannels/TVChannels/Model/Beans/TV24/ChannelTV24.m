@@ -18,7 +18,14 @@ static NSString *const kTV24CidKey = @"cid";
 static NSString *const kTV24CatIdKey = @"cat_id";
 static NSString *const kTV24CategoryNameKey = @"category_name";
 static NSString *const kTV24CategoryImageKey = @"category_image";
+static NSString *const kTV24ChannelLogoKey = @"logo";
 
+static NSString *const kTV24CurrentProgramTitleKey = @"on-now";
+static NSString *const kTV24CurrentProgramDescriptionKey = @"on-now-description";
+static NSString *const kTV24CurrentProgramTimeKey = @"on-now-time";
+
+static NSString *const kTV24NextProgramTitleKey = @"up-next";
+static NSString *const kTV24NextProgramTimeKey = @"up-next-time";
 
 @interface ChannelTV24 ()
 
@@ -90,6 +97,36 @@ static NSString *const kTV24CategoryImageKey = @"category_image";
 - (NSString *)getCategoryImageName {
 
     return [self.channelDatas valueForKey:kTV24CategoryImageKey];
+}
+
+- (NSString *)getChannelLogo {
+
+    return [self.channelDatas valueForKey:kTV24ChannelLogoKey];
+}
+
+- (NSString *)getChannelCurrentProgramTitle {
+
+    return [self.channelDatas valueForKey:kTV24CurrentProgramTitleKey];
+}
+
+- (NSString *)getChannelCurrentProgramDescription {
+
+    return [self.channelDatas valueForKey:kTV24CurrentProgramDescriptionKey];
+}
+
+- (NSString *)getChannelCurrentProgramTime {
+
+    return [self.channelDatas valueForKey:kTV24CurrentProgramTimeKey];
+}
+
+- (NSString *)getChannelNextProgramTitle {
+
+    return [self.channelDatas valueForKey:kTV24NextProgramTitleKey];
+}
+
+- (NSString *)getChannelNextProgramTime {
+
+    return [self.channelDatas valueForKey:kTV24NextProgramTimeKey];
 }
 
 #pragma mark - ---- PUBLIC

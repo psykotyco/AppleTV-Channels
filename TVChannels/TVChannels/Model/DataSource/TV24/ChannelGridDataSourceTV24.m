@@ -35,6 +35,7 @@ static NSString *const RESPONSE_DICTIONARY_KEY = @"data";
         if (error) {
             block(nil, error);
         } else {
+
             id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 
             if ([[jsonResponse class] isSubclassOfClass:[NSDictionary class]]) {

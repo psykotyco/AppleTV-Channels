@@ -58,7 +58,11 @@ static NSString *const GRID_CHANNEL_CELL_REUSE_IDENTIFIER = @"ChannelCell";
 
     NSArray *categoryChannels = [[self.channelCategories objectAtIndex:indexPath.section] getCategoryChannels];
     id<ChannelProtocol> channel = categoryChannels[indexPath.row];
+
+    [currentProgram setText:channel.getChannelCurrentProgramTitle];
+    [nextProgram setText:channel.getChannelNextProgramTitle];
     [programImage setImage:[UIImage imageNamed:@"channel_placeholder"]];
+    [channelImage setImage:nil];
     
     if ([self.dataSource respondsToSelector:@selector(getImageWithName:completion:)]) {
         [self.dataSource getImageWithName:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
@@ -70,6 +74,11 @@ static NSString *const GRID_CHANNEL_CELL_REUSE_IDENTIFIER = @"ChannelCell";
         [self.dataSource getImageWithUrl:[channel getThumbnailName] completion:^(UIImage *result, NSError *error) {
             if (result && !error) {
                 [programImage setImage:result];
+            }
+        }];
+        [self.dataSource getImageWithUrl:[channel getChannelLogo] completion:^(UIImage *result, NSError *error) {
+            if (result && !error) {
+                [channelImage setImage:result];
             }
         }];
     }
